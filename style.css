@@ -726,21 +726,7 @@ body {
   }
 
   /* --- HOME --- */
-  .home-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .intro-text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    max-width: 90%;
-  }
-
-  #role1, #role2, #role3 {
-    font-size: 1.1rem;
-  }
+  @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; } .hero-right { margin-top: 2rem; } .role { font-size: clamp(40px, 10vw, 90px); } .hero-right img { max-width: 320px; height: 420px; } }
 
   /* --- ABOUT --- */
   .about-container {
