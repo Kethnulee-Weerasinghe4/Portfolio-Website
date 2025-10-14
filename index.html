@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kethnulee Weerasinghe — Portfolio</title>
+    <!-- Favicon -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <div class="menu-icon" id="menuIcon">☰</div>
+    <div class="fullscreen-menu" id="fullscreenMenu">
+      <div class="close-btn" id="closeBtn">✕</div>
+      <div class="menu-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- HOME -->
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-left">
+          <div class="roles">
+            <div class="role" id="role1">Web Developer</div>
+            <div class="role" id="role2">Frontend Developer</div>
+            <div class="role" id="role3">Fullstack Developer</div>
+          </div>
+          <p class="intro-paragraph" id="introP">
+            I’m a web developer focused on writing clean, maintainable code and
+            building smooth, engaging user experiences. I bringing interfaces to
+            life and exploring new technologies that push my work further.
+          </p>
+          <a class="download-btn" href="Kethnulee-CV" id="downloadCV"
+            >Download CV</a
+          >
+        </div>
+        <div class="hero-right">
+          <img src="img/my-photo.png" alt="Kethnulee Weerasinghe" />
+        </div>
+      </section>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="about-left">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-text">
+          I’m a passionate Web Developer with a BEng (Hons) in Software
+          Engineering. I specialize in creating engaging, user-friendly frontend
+          interfaces and have solid full stack development skills.
+        </p>
+        <p class="about-text">
+          I’m a quick learner who adapts easily to new technologies and
+          collaborative environments, with a strong focus on delivering
+          efficient and modern web solutions.
+        </p>
+        <a class="btn" href="mailto:wkethnulee@gmail.com" id="btn"> Email </a>
+        <a
+          class="btn"
+          href="https://github.com/Kethnulee-Weerasinghe4"
+          id="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/kethnulee-weerasinghe4/"
+          id="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+      <div class="about-right">
+        <div class="block-animation" id="blockAnimation">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3 class="category-title">Frontend</h3>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                alt="HTML"
+              />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                alt="CSS"
+              />
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                alt="JavaScript"
+              />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3 class="category-title">Backend</h3>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+                alt="Node.js"
+              />
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="Express.js"
+              />
+              <span>Express.js</span>
+            </div>
+            <div class="skill-item">
+              <span>API Integration</span>
+            </div>
+            <div class="skill-item">
+              <span>CORS</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg"
+                alt="bcrypt"
+              />
+              <span>bcrypt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <a
+          href="https://github.com/Kethnulee-Weerasinghe4/Event-Booking-Website"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card"
+        >
+          <div class="project-image">
+            <img src="img/project1.png" alt="Event Booking Website" />
+          </div>
+          <div class="project-content">
+            <h3>Event Booking Website</h3>
+            <p>
+              A platform for users to browse and book tickets for various
+              events.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Kethnulee-Weerasinghe4/News-Website"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card"
+        >
+          <div class="project-image">
+            <img src="img/project2.png" alt="NEWS Website" />
+          </div>
+          <div class="project-content">
+            <h3>NEWS Website</h3>
+            <p>
+              A news website that fetches and displays articles from various
+              sources.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Kethnulee-Weerasinghe4/Porsche-AI-ChatBot"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card"
+        >
+          <div class="project-image">
+            <img src="img/project3.png" alt="Porsche AI ChatBot" />
+          </div>
+          <div class="project-content">
+            <h3>Porsche AI ChatBot</h3>
+            <p>
+              An AI-powered chatbot that provides information about Porsche
+              cars.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Kethnulee-Weerasinghe4/Portfolio-Website"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card"
+        >
+          <div class="project-image">
+            <img src="img/project4.png" alt="Portfolio Website" />
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal portfolio website showcasing projects, skills, and
+              experience.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education-section">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>BEng (Hons) Software Engineering (TOP UP)</h3>
+            <p>London Metropolitan University (UK) — 2024–2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Level 5 Pearson BTEC HND in Computing (General)</h3>
+            <p>ESU — 2022–2024</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
+              Pearson (DiTech) Diploma in Information and Communication
+              Technology
+            </h3>
+            <p>ESU — 2022–2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-subtext">Feel free to reach out.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="send-btn">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3 class="footer-logo">Kethnulee Weerasinghe</h3>
+          <p class="footer-text">
+            Building web experiences that balance design, logic, and
+            performance.
+          </p>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Kethnulee Weerasinghe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
