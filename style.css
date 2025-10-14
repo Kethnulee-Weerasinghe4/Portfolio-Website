@@ -712,95 +712,116 @@ body {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
-  /* General layout */
-  body {
-    overflow-x: hidden;
-  }
 
-  section {
-    padding: 60px 20px;
-  }
+    /* General layout */
+    body {
+        overflow-x: hidden;
+    }
 
-  h1, h2, h3 {
-    text-align: center;
-  }
+    section {
+        padding: 60px 20px;
+    }
 
-  /* --- HOME --- */
-  @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; } .hero-right { margin-top: 2rem; } .role { font-size: clamp(40px, 10vw, 90px); } .hero-right img { max-width: 320px; height: 420px; } }
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
 
-  /* --- ABOUT --- */
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
+    /* --- HOME --- */
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
 
-  .about-text {
-    max-width: 100%;
-    font-size: 0.95rem;
-  }
+        .hero-right {
+            margin-top: 2rem;
+        }
 
-  .block {
-    transform: scale(0.8);
-  }
+        .role {
+            font-size: clamp(40px, 10vw, 90px);
+        }
 
-  .about-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
+        .hero-right img {
+            max-width: 320px;
+            height: 420px;
+        }
+    }
 
-  .about-buttons button {
-    width: 80%;
-  }
+    /* --- ABOUT --- */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  /* --- EDUCATION --- */
-  .timeline {
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 20px;
-  }
+    .about-text {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
 
-  .timeline-item {
-    width: 100%;
-    text-align: left;
-  }
+    .block {
+        transform: scale(0.8);
+    }
 
-  /* --- MENU --- */
-  #fullscreenMenu {
-    font-size: 1.2rem;
-  }
+    .about-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
 
-  #menuIcon {
-    top: 20px;
-    right: 20px;
-    font-size: 1.8rem;
-  }
+    .about-buttons button {
+        width: 80%;
+    }
 
-  /* --- CONTACT --- */
-  .contact-container {
-    width: 100%;
-    padding: 20px;
-  }
+    /* --- EDUCATION --- */
+    .timeline {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
 
-  .contact-form {
-    width: 100%;
-  }
+    .timeline-item {
+        width: 100%;
+        text-align: left;
+    }
 
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    font-size: 1rem;
-  }
+    /* --- MENU --- */
+    #fullscreenMenu {
+        font-size: 1.2rem;
+    }
 
-  /* --- FOOTER --- */
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+    #menuIcon {
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+    }
 
-  .footer-section {
-    margin-bottom: 20px;
-  }
+    /* --- CONTACT --- */
+    .contact-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
 }
