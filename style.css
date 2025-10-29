@@ -711,138 +711,154 @@ body {
 
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 1024px) {
+/* ======== HOME PAGE RESPONSIVE ======== */
+@media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 4rem 2rem;
+        padding: 60px 20px;
+    }
+
+    .hero-left {
+        flex: 1 1 100%;
+        max-width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-right {
-        margin-top: 2rem;
+        flex: 1 1 100%;
         justify-content: center;
+        order: 1;
+        margin-bottom: 2rem;
+        padding: 0;
     }
 
     .hero-right img {
-        max-width: 350px;
+        width: 100%;
+        max-width: 300px;
         height: auto;
+        object-fit: contain;
     }
 
     .role {
-        font-size: clamp(32px, 8vw, 80px);
-    }
-
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 5%;
-    }
-
-    .about-text {
-        max-width: 100%;
-        font-size: 1rem;
-    }
-
-    .block-animation {
-        display: none; 
-    }
-
-    .skills-row {
-        justify-content: center;
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 24px;
-    }
-
-    .timeline {
-        margin-left: 0;
-        border-left: none;
-        border-top: 2px solid #444;
-        padding-top: 20px;
-    }
-
-    .timeline-item {
-        padding-left: 0;
-        padding-top: 30px;
-        text-align: center;
-    }
-
-    .timeline-dot {
-        left: 50%;
-        top: -8px;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-icon {
-        top: 1rem;
-        right: 1rem;
-        font-size: 1.8rem;
-    }
-
-    .fullscreen-menu {
-        height: 100%;
-    }
-
-    .menu-links a {
-        font-size: 1.5rem;
-    }
-
-    .hero-right img {
-        max-width: 260px;
-        height: auto;
+        font-size: clamp(36px, 9vw, 80px);
     }
 
     .intro-paragraph {
         font-size: 1rem;
-    }
-
-    .about-title {
-        font-size: 2rem;
-    }
-
-    .skills-title,
-    .section-title,
-    .contact-title {
-        font-size: 2.2rem;
-    }
-
-    .footer-container {
-        flex-direction: column;
+        max-width: 100%;
+        margin: 1.5rem auto;
         text-align: center;
-        gap: 20px;
     }
 
-    .footer-right,
-    .footer-left {
+    .download-btn {
+        display: block;
+        margin: 1.5rem auto 0;
         text-align: center;
     }
 }
 
-@media (max-width: 400px) {
-    .menu-icon {
-        font-size: 1.5rem;
+
+/* ======== ABOUT PAGE RESPONSIVE ======== */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
     }
 
-    .menu-links a {
-        font-size: 1.3rem;
+    .about-left,
+    .about-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .block-animation {
+        display: none; /* optional: hide animated blocks on phones */
+    }
+
+    .btn {
+        width: 80%;
+        margin: 1rem auto 0;
+        display: block;
+    }
+}
+
+
+/* ======== FOOTER RESPONSIVE ======== */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        min-width: unset;
+    }
+
+    .footer-links {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-section {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ======== EXTRA SMALL SCREENS ======== */
+@media (max-width: 480px) {
+    .hero-right img {
+        max-width: 260px;
+    }
+
+    .role {
+        font-size: clamp(28px, 10vw, 60px);
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
     }
 
     .download-btn,
-    .btn,
-    .send-btn {
-        width: 100%;
+    .btn {
+        width: 90%;
         text-align: center;
     }
 
-    .hero {
-        padding: 3rem 1rem;
-    }
-
-    .contact-subtext {
-        font-size: 1rem;
+    .footer-section {
+        padding: 30px 5% 15px;
     }
 }
