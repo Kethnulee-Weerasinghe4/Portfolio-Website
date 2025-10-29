@@ -710,7 +710,7 @@ body {
 }
 
 
-/* ========== RESPONSIVE FIXED & EXPANDED ========== */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -744,7 +744,7 @@ body {
     }
 
     .block-animation {
-        display: none; /* Hide complex animations for tablets & smaller */
+        display: none; 
     }
 
     .skills-row {
