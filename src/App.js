@@ -101,7 +101,7 @@ function App() {
 
         {/* Button */}
         <motion.a
-          href="/cv.pdf"
+          href="/Kethnulee-CV.pdf"
           download
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.96 }}
@@ -292,11 +292,21 @@ function App() {
         </motion.h2>
 
         <div className="max-w-3xl mx-auto">
-          <form className="flex flex-col gap-6">
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            className="flex flex-col gap-6"
+          >
+            {/* REQUIRED Web3Forms key */}
+            <input type="hidden" name="access_key" value="51a525ab-d9aa-41b2-a365-821edc78d58b" />
+
             {/* Name */}
             <motion.input
+              name="name"
               type="text"
               placeholder="Your Name"
+              required
               className="bg-black border border-gray-400 text-white p-4 rounded-xl focus:outline-none focus:border-yellow-400 transition"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -305,8 +315,10 @@ function App() {
 
             {/* Email */}
             <motion.input
+              name="email"
               type="email"
               placeholder="Your Email"
+              required
               className="bg-black border border-gray-400 text-white p-4 rounded-xl focus:outline-none focus:border-yellow-400 transition"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -315,8 +327,10 @@ function App() {
 
             {/* Message */}
             <motion.textarea
+              name="message"
               placeholder="Your Message"
               rows="6"
+              required
               className="bg-black border border-gray-400 text-white p-4 rounded-xl focus:outline-none focus:border-yellow-400 transition resize-none"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
