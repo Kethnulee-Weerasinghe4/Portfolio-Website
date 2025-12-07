@@ -6,31 +6,31 @@ const projects = [
   {
     id: 1,
     title: "Event Booking Website",
-    image: "/project1.png",
+    image: process.env.PUBLIC_URL + "/project1.png",
     github: "https://github.com/Kethnulee-Weerasinghe4/Event-Booking-Website",
   },
   {
     id: 2,
     title: "NEWS Website",
-    image: "/project2.png",
+    image: process.env.PUBLIC_URL + "/project2.png",
     github: "https://github.com/Kethnulee-Weerasinghe4/NEWS-Website",
   },
   {
     id: 3,
     title: "Porsche AI Chatbot",
-    image: "/project3.png",
+    image: process.env.PUBLIC_URL + "/project3.png",
     github: "https://github.com/Kethnulee-Weerasinghe4/Porsche-AI-Chatbot",
   },
   {
     id: 4,
     title: "Portfolio Website",
-    image: "/project4.png",
+    image: process.env.PUBLIC_URL + "/project4.png",
     github: "https://github.com/Kethnulee-Weerasinghe4/Portfolio-Website",
   },
   {
     id: 5,
     title: "Book Management System",
-    image: "/project5.png",
+    image: process.env.PUBLIC_URL + "/project5.png",
     github: "https://github.com/Kethnulee-Weerasinghe4/BookHaven-Book-Management-System",
   },
 ];
@@ -49,13 +49,13 @@ function App() {
         <a href="#contact" className="hover:text-yellow-400 transition">Contact</a>
       </nav>
 
-      {/* Hero Section */}
+      {/* Home */}
       <section
         id="home"
         className="relative w-full h-screen flex items-center justify-center"
       >
         <img
-          src="/myphoto.jpg"
+          src={process.env.PUBLIC_URL + "/myphoto.jpg"}
           alt="My Photo"
           className="absolute w-full h-full object-cover"
         />
@@ -70,7 +70,7 @@ function App() {
         </motion.h1>
       </section>
 
-      {/* About Section */}
+      {/* About  */}
       <section
         id="about"
         className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-10 py-20"
