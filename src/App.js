@@ -17,9 +17,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "Porsche AI Chatbot",
+    title: "Porsche Chatbot",
     image: process.env.PUBLIC_URL + "/project3.png",
-    github: "https://github.com/Kethnulee-Weerasinghe4/Porsche-AI-Chatbot",
+    github: "https://github.com/Kethnulee-Weerasinghe4/Porsche-Chatbot",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const projects = [
     id: 5,
     title: "Book Management System",
     image: process.env.PUBLIC_URL + "/project5.png",
-    github: "https://github.com/Kethnulee-Weerasinghe4/BookHaven-Book-Management-System",
+    github: "https://github.com/Kethnulee-Weerasinghe4/Book-Management-System",
   },
 ];
 
@@ -66,7 +66,7 @@ function App() {
           transition={{ duration: 1.5 }}
           className="text-yellow-400 text-6xl md:text-8xl font-bold absolute bottom-20"
         >
-          Business Analyst
+          Web Developer
         </motion.h1>
       </section>
 
@@ -92,16 +92,14 @@ function App() {
           transition={{ duration: 1 }}
           className="max-w-3xl text-lg leading-8 text-gray-300 text-center"
         >
-          Passionate Business Analyst with a strong educational background, focused on
-          translating business objectives into actionable requirements and aligning clear
-          delivery outcomes. Leverages strong technical fluency, web development
-          experience, and Agile methodology expertise to bridge communication gaps,
-          optimize workflows, and drive solution clarity.
+          I’m a web developer with a strong interest in building clean,
+          responsive, and user-friendly web applications. I enjoy turning ideas
+          and requirements into working solutions using modern web technologies.
         </motion.p>
 
         {/* Button */}
         <motion.a
-          href="/Kethnulee-CV.pdf"
+          href="/Kethnulee - CV.pdf"
           download
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.96 }}
@@ -177,42 +175,59 @@ function App() {
         </div>
       </section>
 
-
-
       {/* Skills Section */}
       <section id="skills" className="min-h-screen bg-black text-white py-20 px-10">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold mb-12 text-center"
+          className="text-5xl font-bold mb-16 text-center"
         >
-          Skills
+        Skills
         </motion.h2>
 
-        <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-10">
+        <div className="max-w-4xl mx-auto space-y-12">
           {[
-            { name: "Business Analysis", level: 95 },
-            { name: "Agile Methodology", level: 90 },
-            { name: "Web Development", level: 80 },
-            { name: "Data Analysis", level: 85 },
-            { name: "Requirement Gathering", level: 90 },
-            { name: "Stakeholder Communication", level: 95 }
-          ].map((skill, index) => (
+            {
+              category: "Frontend",
+              skills: ["Html", "CSS", "React", "Tailwind CSS"]
+            },
+            {
+              category: "Backend",
+              skills: ["C#", ".NET", "Node.js"]
+            },
+            {
+              category: "Databases",
+              skills: ["MySQL", "MongoDB"]
+            },
+            {
+              category: "Tools & Version Controll",
+              skills: ["Git", "GitHub", "Figma", "Canva"]
+            },
+            {
+              category: "Concepts",
+              skills: ["OOP"]
+            }
+          ].map((group, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
-              <div className="w-full bg-gray-700 rounded-full h-4">
-                <motion.div
-                  className="bg-gray-300 h-4 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1.2, delay: 0.2 }}
-                />
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">
+                {group.category}
+              </h3>
+
+              <div className="flex flex-wrap gap-3">
+                {group.skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="px-4 py-1.5 text-sm border border-gray-500 rounded-full text-gray-300 hover:bg-gray-200 hover:text-black transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
@@ -239,7 +254,7 @@ function App() {
           {[
             {
               degree: "BEng (Hons) Software Engineering (TOP UP)",
-              info: "ULondon Metropolitan University (UK) — 2024–2025",
+              info: "London Metropolitan University (UK) — 2024–2025",
             },
             {
               degree: "Level 5 Pearson BTEC HND in Computing (General)",
@@ -247,7 +262,7 @@ function App() {
             },
             {
               degree: "Pearson (DiTech) Diploma in Information and Communication Technology",
-              info: "IESU — 2022–2023",
+              info: "ESU — 2022–2023",
             }
           ].map((edu, index) => {
             const isLeft = index % 2 === 0;
@@ -265,7 +280,7 @@ function App() {
                 ></div>
 
                 {/* Card */}
-                <div className={`w-1/2 px-6 ${isLeft ? "pr-12" : "pl-12"}`}>
+                <div className={`w-1/2 px-7 ${isLeft ? "pr-12" : "pl-12"}`}>
                   <div className={`bg-black border border-gray-400 p-6 rounded-xl shadow-lg ${isLeft ? "text-right" : "text-left"}`}>
                     <h3 className="text-1xl font-semibold text-white">{edu.degree}</h3>
                     <p className="mt-2 text-gray-300">{edu.info}</p>
@@ -397,7 +412,7 @@ function App() {
 
           {/* Bottom Note */}
           <p className="text-sm text-gray-600">
-            © {new Date().getFullYear()} Kethnulee — All Rights Reserved
+            © {new Date().getFullYear()} Kethnulee — Portfolio
           </p>
         </div>
       </footer>
