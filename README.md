@@ -1,5 +1,7 @@
 # Portfolio Website
 
+Fully responsive personal portfolio site with downloadable resume, timeline-based experience, skill categorization, and contact form.
+
 **Live Website:** [https://kethnulee-weerasinghe4.github.io/Portfolio-Website/](https://kethnulee-weerasinghe4.github.io/Portfolio-Website/)
 
 ![Website Preview](./preview.png)
@@ -25,7 +27,7 @@ This portfolio website showcases my work as a web developer, highlighting projec
 
 ### Installation
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/Kethnulee-Weerasinghe4/Portfolio-Website.git
+cd Portfolio-Website
 npm install
 npm start
