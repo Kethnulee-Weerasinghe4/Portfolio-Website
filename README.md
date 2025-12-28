@@ -19,7 +19,7 @@ This portfolio website showcases my work as a web developer, highlighting projec
 - Visual timeline for education
 
 ## Tech Stack
-- **Frontend:** React, Tailwind CSS  
+- **Frontend:** HTML, JavaScript, React, Tailwind CSS  
 - **Animations:** Framer Motion  
 - **Backend / Forms:** Web3Forms  
 
