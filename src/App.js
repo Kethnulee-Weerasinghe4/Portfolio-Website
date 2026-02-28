@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="font-sans">
       {/* Navbar */}
-      <nav className="fixed w-full top-0 right-0 bg-black bg-opacity-0 text-white flex justify-end pr-10 gap-8 py-4 z-50">
+      <nav className="fixed w-full top-0 right-0 bg-black bg-opacity-0 text-gray-400 flex justify-end pr-10 gap-8 py-4 z-50">
         <a href="#home" className="hover:text-yellow-400 transition">Home</a>
         <a href="#about" className="hover:text-yellow-400 transition">About</a>
         <a href="#projects" className="hover:text-yellow-400 transition">Projects</a>
@@ -55,7 +55,7 @@ function App() {
         className="relative w-full h-screen flex items-center justify-center"
       >
         <img
-          src={process.env.PUBLIC_URL + "/myphoto.jpg"}
+          src={process.env.PUBLIC_URL + "/myphoto.png"}
           alt="My Photo"
           className="absolute w-full h-full object-cover"
         />
@@ -190,7 +190,7 @@ function App() {
           {[
             {
               category: "Frontend",
-              skills: ["Html", "CSS", "React", "Tailwind CSS"]
+              skills: ["Html", "CSS", "JavaScript", "React", "Tailwind CSS"]
             },
             {
               category: "Backend",
@@ -198,7 +198,7 @@ function App() {
             },
             {
               category: "Databases",
-              skills: ["MySQL", "MongoDB"]
+              skills: ["Microsoft SQL Server", "MongoDB"]
             },
             {
               category: "Tools & Version Controll",
@@ -206,7 +206,7 @@ function App() {
             },
             {
               category: "Concepts",
-              skills: ["OOP"]
+              skills: ["OOP", "REST API"]
             }
           ].map((group, index) => (
             <motion.div
