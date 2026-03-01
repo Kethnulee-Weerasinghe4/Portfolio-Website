@@ -19,7 +19,7 @@ Fully responsive personal portfolio site with downloadable resume, timeline-base
 - Visual timeline for education
 
 ## Tech Stack
-- **Frontend:** React (JavaScript, HTML, CSS), Tailwind CSS
+- **Frontend:** React (HTML, CSS, JavaScript), Tailwind CSS
 - **Animations:** Framer Motion  
 - **Backend / Forms:** Web3Forms  
 
