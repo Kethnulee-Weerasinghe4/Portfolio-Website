@@ -7,7 +7,7 @@ Fully responsive personal portfolio site with downloadable resume, timeline-base
 ![Website Preview](./preview.png)
 
 ## Overview
-This portfolio is a React web application that showcases my work as a web developer, including projects, skills, education, and contact information. Built with React, Tailwind CSS, and Framer Motion, it leverages a component-based architecture for a modular and maintainable codebase. The site is fully responsive, with smooth, interactive animations and transitions. Visitors can explore detailed project pages, download my CV, and send messages directly through the integrated contact form, providing a seamless and engaging user experience.
+**Portfolio Website** is a React web application that showcases my work as a web developer, including projects, skills, education, and contact information. Built with React, Tailwind CSS, and Framer Motion, it leverages a component-based architecture for a modular and maintainable codebase. The site is fully responsive, with smooth, interactive animations and transitions. Visitors can explore detailed project pages, download my CV, and send messages directly through the integrated contact form, providing a seamless and engaging user experience.
 
 ## Key Features
 - Interactive sections: Home, About, Projects, Skills, Education, Contact
